@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: black;
+}
+
+a,
+button {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+}
+
+button {
+  font-size: inherit;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: 0.4s;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+input {
+  background-color: rgb(9, 9, 9);
+  border: 2px solid rgb(200, 200, 200);
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: inherit;
+  padding: 0.25rem 0.5rem;
+}
+
+input:focus {
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.15);
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.center-content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fill-page {
+  min-height: 100vh;
+}
+
+.underline-link {
+  position: relative;
+}
+
+.underline-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform-origin: left;
+  transform: scaleX(0);
+  background-color: white;
+  transition: 0.4s ease-out;
+}
+
+.underline-link:hover::before {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+  font-size: 2rem;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.home-content h2 {
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.home-buttons a {
+  border: 2px solid white;
+  transition: 0.4s;
+}
+
+.home-buttons a:hover {
+  color: black;
+  background-color: white;
+}
+
+.sign-in-up-page h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.sign-in-up-form {
+  font-size: 1.25rem;
+  align-items: flex-start;
+  border: 2px solid rgb(125, 125, 125);
+  background-color: rgb(20, 20, 20);
+  padding: 2rem;
+}
+
+.sign-in-up-submit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container svg {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
