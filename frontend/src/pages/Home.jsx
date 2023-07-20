@@ -17,8 +17,12 @@ const Home = () => {
             mindful habit cultivation.
           </h2>
           <div className="home-buttons">
-            <Link to="/login">Sign in</Link>
-            <Link to="/register">Register</Link>
+            <Link to="/login" className="link-button">
+              Sign in
+            </Link>
+            <Link to="/register" className="link-button">
+              Register
+            </Link>
           </div>
         </div>
       )}

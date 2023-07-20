@@ -21,6 +21,12 @@ button {
   color: inherit;
 }
 
+select,
+option {
+  color: black;
+  font-size: inherit;
+}
+
 button {
   font-size: inherit;
   border: 2px solid white;
@@ -34,7 +40,8 @@ button:hover {
   cursor: pointer;
 }
 
-input {
+input,
+textarea {
   background-color: rgb(9, 9, 9);
   border: 2px solid rgb(200, 200, 200);
   border-top-left-radius: 0.5rem;
@@ -124,23 +131,23 @@ input:focus {
   font-size: 1.5rem;
 }
 
-.home-buttons a {
+.link-button {
   border: 2px solid white;
   transition: 0.4s;
 }
 
-.home-buttons a:hover {
+.link-button:hover {
   color: black;
   background-color: white;
 }
 
-.sign-in-up-page h1 {
+.form-container h1 {
   font-size: 2.5rem;
   font-weight: normal;
   margin-bottom: 1rem;
 }
 
-.sign-in-up-form {
+form {
   font-size: 1.25rem;
   align-items: flex-start;
   border: 2px solid rgb(125, 125, 125);
@@ -148,7 +155,7 @@ input:focus {
   padding: 2rem;
 }
 
-.sign-in-up-submit {
+.form-button-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;

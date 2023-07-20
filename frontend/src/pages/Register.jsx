@@ -47,12 +47,9 @@ const Register = () => {
   };
 
   return (
-    <div className="sign-in-up-page fill-page center-content-column">
+    <div className="form-container fill-page center-content-column">
       <h1>Sign up</h1>
-      <form
-        onSubmit={handleSubmit}
-        className="sign-in-up-form center-content-column"
-      >
+      <form onSubmit={handleSubmit} className=" center-content-column">
         <label htmlFor="name">Name*</label>
         <input type="text" id="name" name="name" required ref={nameRef} />
         <label htmlFor="email">Email*</label>
@@ -72,7 +69,7 @@ const Register = () => {
             <AiOutlineEyeInvisible onClick={togglePassword} />
           )}
         </div>
-        <div className="sign-in-up-submit">
+        <div className="form-button-container">
           <button type="submit">Login</button>
         </div>
       </form>
