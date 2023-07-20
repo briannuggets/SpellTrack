@@ -51,7 +51,7 @@ const getGoals = asyncHandler(async (req, res) => {
 
   const foundGoal = await Goal.findOne({ user: userId });
   if (foundGoal) {
-    res.json(foundGoal);
+    res.status(200).json({ goals: foundGoal.goals });
   } else {
     res.status(404);
     throw new Error("Goal not found");
